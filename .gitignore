@@ -1,69 +1,35 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# Build directories
+# Arquivos de build do CMake
 build/
-Build/
-build-*/
-
-# CMake generated files
+cmake-build-*/
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
-install_manifest.txt
 compile_commands.json
 
-# Temporary files
-*.tmp
-*.log
-*.bak
+# Executavel
+rpg_combat
+*.out
+*.o
+*.obj
+*.exe
+
+# Bibliotecas compiladas
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+
+# Editores e SO
+.vscode/
+.idea/
+.DS_Store
 *.swp
+*.bak
 
-# vcpkg
-vcpkg_installed/
+# PDFs do enunciado (nao fazem parte do projeto)
+*.pdf
 
-# debug information files
-*.dwo
-
-# test output & cache
-Testing/
-.cache/
+# Pasta de specs/planos internos (uso local apenas)
+docs/superpowers/
+.claude/
