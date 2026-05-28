@@ -18,5 +18,18 @@ int main() {
     }
     std::cout << "Fora do bloco — todos os recursos foram liberados.\n";
 
+    std::cout << "\n=== Cena 2: agregacao (Combat referencia Characters) ===\n";
+    Character knight("Galahad", 80, 18, 8);
+    knight.add_weapon(std::make_unique<Weapon>("Mangual", 12, 15));
+    Character goblin("Grunk", 50, 10, 3);
+    goblin.add_weapon(std::make_unique<Weapon>("Adaga Enferrujada", 6, 5));
+    {
+        Combat arena(knight, goblin);
+        arena.run();
+    }
+    std::cout << "Combat destruido. Status dos lutadores (preservados):\n";
+    knight.print_status();
+    goblin.print_status();
+
     return 0;
 }
