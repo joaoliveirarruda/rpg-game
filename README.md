@@ -1,6 +1,6 @@
 # Sistema de Combate RPG — TP1 POO 2026.1
 
-**Aluno:** [NOME] — [MATRÍCULA]
+**Aluno:** JOAO GABRIEL OLIVEIRA DE ARRUDA — 20250018790
 **Disciplina:** POO 2026.1 — UFPB / Centro de Informática
 **Professor:** Carlos Eduardo C. F. Batista
 
