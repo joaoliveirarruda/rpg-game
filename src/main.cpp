@@ -31,5 +31,23 @@ int main() {
     knight.print_status();
     goblin.print_status();
 
+    std::cout << "\n=== Cena 3: casos limite ===\n";
+
+    // Dano cru menor que defesa: dano efetivo deve ser 1 (nao zero, nao negativo)
+    Character armored("Fortaleza", 50, 5, 100);
+    armored.take_damage(3);
+
+    // Personagem sem armas: ataque usa attack_ base
+    Character bare("Mendigo", 40, 7, 1);
+    Character dummy("Alvo", 20, 0, 0);
+    bare.attack_with_weapon(dummy);
+
+    // Atacar alvo ja caido: take_damage retorna sem efeito
+    dummy.take_damage(1000);  // mata o alvo
+    bare.attack_with_weapon(dummy);
+
+    // Habilidade com indice invalido: cast_ability ignora
+    bare.cast_ability(99, dummy);
+
     return 0;
 }
