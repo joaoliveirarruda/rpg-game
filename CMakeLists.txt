@@ -19,6 +19,8 @@ add_executable(rpg_combat
     src/main.cpp
     src/weapon.cpp
     src/inventory.cpp
+    src/ability.cpp
+    src/character.cpp
 )
 
 target_include_directories(rpg_combat PRIVATE src)
