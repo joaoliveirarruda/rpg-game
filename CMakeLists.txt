@@ -17,6 +17,7 @@ endif()
 
 add_executable(rpg_combat
     src/main.cpp
+    src/weapon.cpp
 )
 
 target_include_directories(rpg_combat PRIVATE src)
